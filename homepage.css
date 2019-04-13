@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 21-Mar-2019, 15:44:00
+    Author     : clarissafung
+*/
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+p1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button1 {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  color: black;
+  padding: 20px 54px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.button1:hover{
+  background-color: #f80f0f;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  color: black;
+  padding: 20px 54px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.button2:hover{
+  background-color: #f80f0f;
+  color: white;
+}
