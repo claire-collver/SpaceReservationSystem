@@ -3,6 +3,12 @@
 
 <html>
 <head>
+<script src="sorttable.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
@@ -74,11 +80,9 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 
 
-<input type="text" id="myInputBarcode" onkeyup="myFunction()" placeholder="Search for building.." title="Type in a barcode">
-<input type="text" id="myInputAvailability" onkeyup="myFunction2()" placeholder="Search for availability.." title="Search for available">
 
 <table id="myTable">
-<tr class="sortable">
+<table class="sortable">
 <th style="width:60%;">Bulding</th>
 <th style="width:40%;">Room Number</th>
 <th style="width:60%;">Availability</th>
@@ -115,52 +119,14 @@ tr:nth-child(even){background-color: #f2f2f2}
 
 </table>
 
-<form action="sortTable.php">
-<button id="sub" class= "button3 button">Sortable Table</button>
+<form action="checkOccupancy.php">
+<button id="sub" class= "button3 button">Filter Table</button>
 </form>
 <form action="index.php">
 <button id="sub" class= "button3 button">Back</button>
 </form>
 
-    
-<script>
-    function myFunction() {
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInputBarcode");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-        } else {
-        tr[i].style.display = "none";
-        }
-    }
-}
-}
-    function myFunction2() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInputAvailability");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[2];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
+
 </body>
 </html>
 

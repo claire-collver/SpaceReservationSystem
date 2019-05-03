@@ -57,13 +57,14 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <h1 id="title">Welcome to the Davidson College Space Reservation System!</h1>
-<p id="subtitle">Please select if you would like to make a reservation or check occupancy below:</p>
+
 <br>
 <div class="wrapper">
-  <a class="button1" href="makeReservation.php">Make a Reservation</a>
+  <a class="button1" href="reserveTable.php">Make a Reservation</a>
   <a class="button2" href="checkOccupancy.php">Check Occupancy</a>
   
    <img src="wildcat1.jpg">
+    <a class="button3" href="Log.php">Log out</a>
 </div>
 
 
